@@ -245,7 +245,7 @@ defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true
 defaults write com.apple.finder ShowMountedServersOnDesktop -bool true
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 
-action "Finder: show hidden files by default"
+#action "Finder: show hidden files by default"
 #defaults write com.apple.finder AppleShowAllFiles -bool true
 
 action "Finder: show all filename extensions"

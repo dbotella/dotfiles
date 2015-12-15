@@ -1,0 +1,6 @@
+Your Coverity HostID is: 010168eb2d73ad178a90f3d1a3773e5a4d2c7991:debian8
+To obtain a license: 
+Please log into the Coverity Customer Portal and locate your license record
+(under the Licensing menu), then choose 'Set Host Id'. Enter the Coverity
+HostID above when prompted and your license file will be automatically
+generated at that time.

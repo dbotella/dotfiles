@@ -1,0 +1,15 @@
+[submodule "others_dotfiles/cryptostrophe"]
+	path = others_dotfiles/cryptostrophe
+	url = https://github.com/cryptostrophe/dotfiles.git
+[submodule "others_dotfiles/mathiasbynens"]
+	path = others_dotfiles/mathiasbynens
+	url = https://github.com/mathiasbynens/dotfiles.git
+[submodule "others_dotfiles/holman"]
+	path = others_dotfiles/holman
+	url = https://github.com/holman/dotfiles.git
+[submodule "others_dotfiles/skwp"]
+	path = others_dotfiles/skwp
+	url = https://github.com/skwp/dotfiles.git
+[submodule "others_dotfiles/atomantic"]
+	path = others_dotfiles/atomantic
+	url = https://github.com/atomantic/dotfiles.git

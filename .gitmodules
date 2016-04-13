@@ -13,3 +13,6 @@
 [submodule "others_dotfiles/atomantic"]
 	path = others_dotfiles/atomantic
 	url = https://github.com/atomantic/dotfiles.git
+[submodule "others_dotfiles/linux/andreicristianpetcu"]
+	path = others_dotfiles/linux/andreicristianpetcu
+	url = https://github.com/andreicristianpetcu/dotfiles.git

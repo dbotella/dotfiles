@@ -1,0 +1,278 @@
+CPAN=cpanm
+
+cpan_modules='
+Algorithm:C3
+Algorithm:Diff
+App:cpanminus
+Archive:Tar
+Archive:Zip
+Attribute:Handlers
+AutoLoader
+B:Debug
+B:Hooks:EndOfScope
+B:Keywords
+BSD:Resource
+Bit:Vector
+CGI
+CPAN
+CPAN:Meta
+CPAN:Meta:Requirements
+CPAN:Meta:YAML
+Capture:Tiny
+Carp
+Carp:Clan
+Class:Accessor
+Class:C3
+Class:Data:Inheritable
+Class:Load
+Class:Load:XS
+Clone
+Compress:Raw:Bzip2
+Compress:Raw:Zlib
+Config:Perl:V
+Config:Tiny
+DBD:CSV
+DBD:ODBC
+DBD:Pg
+DBD:SQLite
+DBI
+DB_File
+Data:Dump
+Data:Dumper
+Data:OptList
+Date:Calc
+Devel:GlobalDestruction
+Devel:NYTProf
+Devel:OverloadInfo
+Devel:PPPort
+Devel:SelfStubber
+Devel:StackTrace
+Digest
+Digest:HMAC
+Digest:MD5
+Digest:SHA
+Digest:SHA1
+Dist:CheckConflicts
+Dumpvalue
+Email:Address
+Encode
+Encode:Locale
+Env
+Eval:Closure
+Exception:Class
+Exporter
+Exporter:Tiny
+ExtUtils:CBuilder
+ExtUtils:Command
+ExtUtils:Install
+ExtUtils:MakeMaker
+ExtUtils:Manifest
+ExtUtils:ParseXS
+File:Fetch
+File:HomeDir
+File:Listing
+File:Next
+File:Path
+File:Temp
+File:Which
+Filter
+Filter:Simple
+GD
+GD:Graph
+GD:Text
+Getopt:Long
+HTML:Form
+HTML:Parser
+HTML:Tagset
+HTML:Template
+HTML:Tree
+HTTP:Cookies
+HTTP:Daemon
+HTTP:Date
+HTTP:Message
+HTTP:Negotiate
+HTTP:Tiny
+I18N:Collate
+IO
+IO:Compress
+IO:HTML
+IO:Socket:IP
+IO:Socket:SSL
+IO:String
+IO:Zlib
+IPC:Cmd
+IPC:SysV
+JSON
+JSON:Any
+JSON:PP
+LWP
+LWP:MediaTypes
+LWP:Protocol:https
+List:MoreUtils
+List:Util
+Locale:Codes
+Locale:Maketext
+Locale:Maketext:Simple
+MIME:Base64
+MLDBM
+MRO:Compat
+Mac:Errors
+Math:BigInt
+Math:BigInt:FastCalc
+Math:BigRat
+Math:Complex
+Memoize
+Module:Build
+Module:CoreList
+Module:Implementation
+Module:Load
+Module:Load:Conditional
+Module:Loaded
+Module:Metadata
+Module:Pluggable
+Module:Runtime
+Module:Runtime:Conflicts
+Moose
+Mozilla:CA
+NEXT
+Net:HTTP
+Net:Ping
+Net:SSLeay
+Net:Telnet
+PPI
+PPIx:Regexp
+PPIx:Utilities
+PPM:Repositories
+Package:Constants
+Package:DeprecationManager
+Package:Stash
+Package:Stash:XS
+Params:Check
+Params:Classify
+Params:Util
+Parse:CPAN:Meta
+PathTools
+Perl
+Perl:Critic
+Perl:OSType
+PerlIO:via:QuotedPrint
+Pod:Checker
+Pod:Escapes
+Pod:Parser
+Pod:Perldoc
+Pod:Simple
+Pod:Usage
+Readonly
+SQL:Statement
+Safe
+Scope:Guard
+Search:Dict
+SelfLoader
+Shell:Command
+Socket
+Storable
+Sub:Exporter
+Sub:Exporter:Progressive
+Sub:Identify
+Sub:Install
+Sub:Name
+Sub:Uplevel
+Sys:Syslog
+Task:Weaken
+Tcl
+Term:ANSIColor
+Term:Cap
+Term:Complete
+Term:ReadKey
+Term:ReadLine
+Term:ReadLine:Perl
+TermReadKey
+Test
+Test:Differences
+Test:Exception
+Test:Harness
+Test:Simple
+Text:Abbrev
+Text:Autoformat
+Text:Balanced
+Text:CSV_XS
+Text:Diff
+Text:Glob
+Text:ParseWords
+Text:Reform
+Text:Tabs+Wrap
+Thread:Queue
+Thread:Semaphore
+Tie:File
+Tie:RefHash
+Time:Epoch
+Time:HiRes
+Time:Local
+Time:Piece
+Tkx
+Try:Tiny
+URI
+Unicode:Collate
+Unicode:Normalize
+WWW:Mechanize
+WWW:RobotRules
+XML:Parser
+XML:Simple
+XSLoader
+YAML:LibYAML
+autodie
+autouse
+base
+bignum
+constant
+encoding:warnings
+experimental
+if
+lib
+libnet
+libwww:perl
+mylib
+namespace:clean
+parent
+perlfaq
+podlators
+threads
+threads:shared
+version
+
+
+    App::cpanminus
+    DBD::ODBC
+    DBD::Oracle
+    Net::FTP
+    Net::Telnet
+    XML::Parser
+    HTML::Parser
+    Crypt::SSLeay
+    Algorithm::Diff
+    Text::Diff
+    Date::Calc
+    Perl::Critic
+    Devel::NYTProf
+    Moose
+    Mozilla::CA
+    Net::SSLeay
+    Getopt::Long
+    HTTP::Tiny
+    IO::Socket::SSL
+    LWP::UserAgent
+    Data::Dumper
+    Pod::Usage
+    Template::Simple
+    SOAP::Lite'
+
+for cpan_module in $cpan_modules; do
+  figlet -cf slant $cpan_module
+  $CPAN $cpan_module
+  if [ $? != 0 ]; then
+    figlet -cf slant cpan $cpan_module fail
+    echo  $CPAN $cpan_module fail >&2
+  else
+    echo  $CPAN $cpan_module ok >&2
+  fi 
+done;

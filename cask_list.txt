@@ -1,0 +1,75 @@
+alfred
+angry-ip-scanner
+appcleaner
+atom
+balsamiq-mockups
+bartender
+betterzip
+cakebrew
+ccleaner
+cleanmymac
+controlplane
+dash
+dia
+diffmerge
+doxygen
+emacs-nightly (!)
+filezilla
+firefox
+firefox-beta (!)
+firefoxdeveloperedition (!)
+flux
+font-anonymous-pro-for-powerline (!)
+font-dejavu-sans-mono-for-powerline (!)
+font-droid-sans-mono-for-powerline (!)
+font-fira-mono-for-powerline (!)
+font-inconsolata (!)
+font-inconsolata-dz-for-powerline (!)
+font-inconsolata-for-powerline (!)
+font-inconsolata-g-for-powerline (!)
+font-liberation-mono-for-powerline (!)
+font-meslo-lg-for-powerline (!)
+font-sauce-code-powerline (!)
+font-source-code-pro-for-powerline (!)
+font-ubuntu-mono-powerline (!)
+github-desktop
+google-chrome
+google-chrome-canary (!)
+hipchat
+hyperswitch
+intellij-idea-ce-bundled-jdk (!)
+iterm2
+itsycal
+keepingyouawake
+kindle
+macdown
+macpass
+memoryanalyzer
+ntfs-free
+omnigraffle-professional5 (!)
+osxfuse
+picasa
+plex-media-player
+progressive-downloader
+sequential
+shortcat
+skitch
+sourcetree
+spectacle
+speedcrunch
+sshfs
+sublime-text
+sublime-text3 (!)
+syncthing
+textsoap
+the-unarchiver
+tigervnc-viewer
+tomighty
+transmit3 (!)
+versions
+visual-studio-code
+vox
+wireshark
+xmind
+yed
+yemuzip
